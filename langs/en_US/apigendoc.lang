@@ -20,21 +20,21 @@
 
 # Module label 'ModuleXXXName'
 # (where XXX is value of numeric property 'numero' of module)
-Module10000Name = My module
+Module103548Name = Dolibarr API document generator
 # Module description 'ModuleXXXDesc'
 # (where XXX is value of numeric property 'numero' of module)
-Module10000Desc = My module description
+Module103548Desc = Dolibarr API document generator description
 
 #
 # Admin page
 #
-ApiGendocSetup = My module setup
+ApiGendocSetup = Dolibarr API document generator setup
 Settings = Settings
-ApiGendocSetupPage = My module setup page
+ApiGendocSetupPage = Dolibarr API document generator setup page
 
 #
 # About page
 #
 About = About
-ApiGendocAbout = About my module
-ApiGendocAboutPage = My module about page
+ApiGendocAbout = About Dolibarr API document generator
+ApiGendocAboutPage = Dolibarr API document generator about page

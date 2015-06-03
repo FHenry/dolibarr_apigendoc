@@ -70,7 +70,7 @@ $head = apigendocAdminPrepareHead();
 dol_fiche_head(
     $head,
     'about',
-    $langs->trans("Module10000Name"),
+    $langs->trans("Module103548Name"),
     0,
     'apigendoc@apigendoc'
 );
