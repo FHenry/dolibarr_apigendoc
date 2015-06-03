@@ -1,0 +1,15 @@
+{
+    "name": "FHenry/dolibarr_api_gendoc",
+    "type": "project",
+    "description": "A Dolibarr module with REST API build on SLIM to call generete PDF on object already exists into dolibarr",
+    "keywords": ["dolibarr"],
+    "homepage": "https://github.com/FHenry/dolibarr_api_gendoc",
+    "license": "GPL-3.0+",
+    "support": {
+        "issues": "https://github.com/FHenry/dolibarr_api_gendoc/issues"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "slim/slim": "2.*"
+    }
+}
