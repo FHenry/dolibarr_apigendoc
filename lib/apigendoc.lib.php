@@ -49,7 +49,7 @@ function apigendocAdminPrepareHead()
     //$this->tabs = array(
     //	'entity:-tabname:Title:@apigendoc:/apigendoc/mypage.php?id=__ID__'
     //); // to remove a tab
-    complete_head_from_modules($conf, $langs, $object, $head, $h, 'apigendoc');
+    complete_head_from_modules($conf, $langs, $object, $head, $h, 'apigendoc_admin');
 
     return $head;
 }

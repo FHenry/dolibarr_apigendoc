@@ -61,7 +61,7 @@ class modApiGendoc extends DolibarrModules
         // (where XXX is value of numeric property 'numero' of module)
         $this->description = "Description of module ApiGendoc";
         // Possible values for version are: 'development', 'experimental' or version
-        $this->version = 'development';
+        $this->version = '0.1';
         // Key used in llx_const table to save module status enabled/disabled
         // (where MYMODULE is value of property name of module in uppercase)
         $this->const_name = 'MAIN_MODULE_' . strtoupper($this->name);
@@ -116,28 +116,30 @@ class modApiGendoc extends DolibarrModules
         // Minimum version of PHP required by module
         $this->phpmin = array(5, 3);
         // Minimum version of Dolibarr required by module
-        $this->need_dolibarr_version = array(3, 5);
+        $this->need_dolibarr_version = array(3, 7);
         $this->langfiles = array("apigendoc@apigendoc"); // langfiles@apigendoc
         // Constants
         // List of particular constants to add when module is enabled
         // (key, 'chaine', value, desc, visible, 'current' or 'allentities', deleteonunactive)
         // Example:
-        $this->const = array(
-            //	0=>array(
-            //		'MYMODULE_MYNEWCONST1',
-            //		'chaine',
-            //		'myvalue',
-            //		'This is a constant to add',
-            //		1
-            //	),
-            //	1=>array(
-            //		'MYMODULE_MYNEWCONST2',
-            //		'chaine',
-            //		'myvalue',
-            //		'This is another constant to add',
-            //		0
-            //	)
-        );
+        $this->const = array();
+        
+        $this->const[$r][0] = 	'APIGENDOC_API_KEY';
+        $this->const[$r][1] = 	'chaine';
+        $this->const[$r][2] = 	'';
+        $this->const[$r][3] = 	'API KEY';
+        $this->const[$r][4] = 	0;
+        $this->const[$r][5] = 	'allentities';
+        $this->const[$r][6] = 	0;
+        
+        $r++;
+        $this->const[$r][0] = 	'APIGENDOC_DEBUGMODE';
+        $this->const[$r][1] = 	'yesno';
+        $this->const[$r][2] = 	'1';
+        $this->const[$r][3] = 	'API DEBUG MODE';
+        $this->const[$r][4] = 	0;
+        $this->const[$r][5] = 	'allentities';
+        $this->const[$r][6] = 	0;
 
         // Array to add new pages in new tabs
         // Example:
@@ -222,8 +224,8 @@ class modApiGendoc extends DolibarrModules
         $r = 0;
         // Example:
 
-        $this->boxes[$r][1] = "MyBox@apigendoc";
-        $r ++;
+       // $this->boxes[$r][1] = "MyBox@apigendoc";
+        //$r ++;
         /*
           $this->boxes[$r][1] = "myboxb.php";
           $r++;

@@ -1,5 +1,5 @@
-# <one line to give the program's name and a brief idea of what it does.>
-# Copyright (C) <year>  <name of author>
+# REST API to call generate dolibarr document output method (PDF,ODT,...)
+# Copyright (C) 2015  Florian HENRY  <florian.henry@open-concept.pro>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,21 +20,23 @@
 
 # Module label 'ModuleXXXName'
 # (where XXX is value of numeric property 'numero' of module)
-Module103548Name = Mon module
+Module103548Name = REST API document generator
 # Module description 'ModuleXXXDesc'
 # (where XXX is value of numeric property 'numero' of module)
-Module103548Desc = Description de mon module
+Module103548Desc = REST API document generator
 
 #
 # Page d'administration
 #
-ApiGendocSetup = Configuration du module mon module
+ApiGendocSetup = Configuration du module REST API document generator
 Settings = Réglages
-ApiGendocSetupPage = Page de réglage de mon module
+ApiGendocSetupPage = Page de réglage de REST API document generator
+ApiGendocDebugMode=Mode Debug de l'API REST (Slim)
+ApiGendocApiKey=Clef de séurité
 
 #
 # Page À propos
 #
 About = À propos
-ApiGendocAbout = À propos de mon module
-ApiGendocAboutPage = Page à propos de mon module
+ApiGendocAbout = À propos de REST API document generator
+ApiGendocAboutPage = Page à propos de REST API document generator
