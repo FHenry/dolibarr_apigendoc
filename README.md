@@ -68,13 +68,20 @@ INSTALL
 
 	- log in as a Dolibarr administrator
 
-	- under "Setup" -> "Other setup", set "MAIN\_FEATURES\_LEVEL" to "2"
-
 	- go to "Setup" -> "Modules"
 
-	- the module is under one of the tabs
+	- the module is under tabs "module interface"
 
-	- you should now be able to enable the new module and start coding ;)
+	- Find module API GenDoc and activate it
+
+	- Go to module configuration and generate a secret key and click on save button
+
+	- After that from your browser goto your dolibarr, 'let's take previous exemple
+		http://localhost/Dolibarr/htdocs/custom/apigendoc/restapi/restapi.php/gendoc/DOCTYPE/DOCID?key=SECRETKEY
+
+		Actually only DOCTYPE "facture" works
+		DOCID is the rowid from document
+		SECRETKEY is the secret key define in config module
 
 Contributions
 -------------
